@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Vollkorn', serif;
+    font-weight: 400;
+    color: #eeeeee;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1a1125;
+    color: #ffffff;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+header h1, 
+header h2 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #a855f7;
+}
+
+header h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 400;
+    color: #d8b4fe;
+}
+
+section h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #a855f7;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    color: #d8b4fe;
+}
+
+p, li {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+#work-experience {
+    background-color: #000000;
+}
+
+#education {
+    background-color: #1a1125;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    border-top: 1px solid #3d2b56;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #a855f7;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/* Color Palette
+# - color 1: #000000 (Black Background)
+# - color 2: #1a1125 (Very Dark Purple Section)
+# - color 3: #3d2b56 (Deep Royal Purple)
+# - color 4: #a855f7 (Bright Purple Accent)
+*/
