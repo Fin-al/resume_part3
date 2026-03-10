@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -12,6 +14,44 @@ body {
     color: #eeeeee;
     line-height: 1.6;
     margin: 0;
+    padding-top: 80px;
+}
+
+.main-nav {
+    background-color: #1a1125;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #a855f7;
+}
+
+.main-nav .content-wrap {
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #a855f7;
+}
+
+.resume-dl {
+    background-color: #a855f7;
+    padding: 5px 15px;
+    border-radius: 4px;
+    color: #ffffff !important;
+    text-decoration: none;
 }
 
 .content-wrap {
@@ -44,12 +84,6 @@ header {
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    
-}
-
-header h1, 
-header h2 {
-    margin: 0;
 }
 
 h1 {
@@ -58,6 +92,7 @@ h1 {
     font-weight: 700;
     line-height: 1.1;
     color: #a855f7;
+    margin: 0;
 }
 
 header h2 {
@@ -65,6 +100,7 @@ header h2 {
     font-size: 24px;
     font-weight: 400;
     color: #d8b4fe;
+    margin: 0;
 }
 
 section h2 {
@@ -100,7 +136,21 @@ ul {
 }
 
 #work-experience {
-    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(26, 17, 37, 0.85)), url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+
+
+.projects-overlay {
+    padding: 40px 0;
+}
+
+#work-experience h2, #work-experience h3, #work-experience p, #work-experience li {
+    color: #ffffff;
 }
 
 #education {
@@ -124,13 +174,11 @@ footer {
     font-weight: 700;
 }
 
+.contact-info i {
+    margin-right: 8px;
+}
+
 a:hover {
     color: #ffffff;
     text-decoration: underline;
 }
-/* Color Palette
-# - color 1: #000000 (Black Background)
-# - color 2: #1a1125 (Very Dark Purple Section)
-# - color 3: #3d2b56 (Deep Royal Purple)
-# - color 4: #a855f7 (Bright Purple Accent)
-*/
